@@ -53,15 +53,15 @@ export class LoginComponent {
 
   loginAsUser() {
     this.loginForm.patchValue({
-      email: 'user@example.com',
-      password: 'userpassword'
+      email: 'user@gmail.com',
+      password: 'user123'
     });
   }
 
   loginAsAdmin() {
     this.loginForm.patchValue({
-      email: 'admin@example.com',
-      password: 'adminpassword'
+      email: 'admin@gmail.com',
+      password: 'admin123'
     });
   }
 }

@@ -30,7 +30,7 @@ export class ApiService {
     };
   }
 
-  private baseUrl = 'http://localhost:8080';
+  private baseUrl = 'https://tourism-project-backend-production.up.railway.app';
 
 loginUser(credentials: { email: string, password: string }): Observable < any > {
   return this.http.post<any>(`${this.baseUrl}/loginAccount`, credentials);

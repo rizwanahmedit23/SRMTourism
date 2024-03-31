@@ -50,4 +50,18 @@ export class LoginComponent {
         
       });
   }
+
+  loginAsUser() {
+    this.loginForm.patchValue({
+      email: 'user@example.com',
+      password: 'userpassword'
+    });
+  }
+
+  loginAsAdmin() {
+    this.loginForm.patchValue({
+      email: 'admin@example.com',
+      password: 'adminpassword'
+    });
+  }
 }

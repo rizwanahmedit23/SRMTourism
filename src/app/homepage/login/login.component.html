@@ -1,6 +1,6 @@
 <!-- login.component.html -->
 <div class="background-image-container">
-<div class="login-container">
+  <div class="login-container">
     <h2>Login</h2>
     <form [formGroup]="loginForm" (ngSubmit)="submitForm()">
       <div *ngIf="loginError" class="error">{{ loginError }}</div>
@@ -17,12 +17,16 @@
       <button type="submit">Login</button><br><br>
       <p>Don't have an account?<a href="/register" style="font-weight:bold ; color: darkblue;">SignUp</a></p>
       <p>Forgot Password?<a href="/forgetpwd" style="font-weight:bold ; color: darkblue;">Reset password</a></p>
+      
+      <!-- Buttons for dummy user and admin login -->
+      <button (click)="loginAsUser()">Login as User</button>
+      <button (click)="loginAsAdmin()">Login as Admin</button>
     </form>
   </div>
 </div>
 
- <!----Footer Start----->
- <div class="footer">
+<!----Footer Start----->
+<div class="footer">
   <p><b class="bld"></b>|<span>&#169;</span> Copyright © 2024 Travel buddy Inc.|</p>
   <p><b class="bld"></b>|<span>&#169;</span> All Rights Reserved.|</p>
 </div>

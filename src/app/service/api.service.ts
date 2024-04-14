@@ -30,7 +30,7 @@ export class ApiService {
     };
   }
 
-  private baseUrl = 'https://tourism-project-backend-production.up.railway.app';
+  private baseUrl = 'https://tourism-project-backend.onrender.com';
 
 loginUser(credentials: { email: string, password: string }): Observable < any > {
   return this.http.post<any>(`${this.baseUrl}/loginAccount`, credentials);

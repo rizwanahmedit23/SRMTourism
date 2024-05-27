@@ -30,7 +30,7 @@ export class ApiService {
     };
   }
 
-  private baseUrl = 'https://tourism-project-backend.onrender.com';
+  private baseUrl = 'http://travel-buddy-service-env.eba-teipm8pv.ap-southeast-2.elasticbeanstalk.com';
 
 loginUser(credentials: { email: string, password: string }): Observable < any > {
   return this.http.post<any>(`${this.baseUrl}/loginAccount`, credentials);

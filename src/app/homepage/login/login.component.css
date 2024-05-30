@@ -1,19 +1,24 @@
 /* login.component.css */
 
 .login-container {
-    max-width: 300px;
+    max-width: 800px;
     margin: auto;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: white;
+    background-color: rgba(0, 0, 0, 0.65);
+    
     font-size: large;
   }
   
   .background-image-container{
     background-image:url("/assets/images/login_bgimg1.jpg") ;
     background-size: cover;
-    height:100vh;
-    padding-top: 80px;
+    /* height:100vh; */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
   }
   .form-group {
     margin-bottom: 15px;
@@ -26,13 +31,21 @@
   }
   
   input {
-    width: 100%;
+    width: 38rem;
     padding: 8px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
   
+  /* This media query will adjust the input width for screens less than 768px wide */
+  @media screen and (max-width: 768px) {
+    input {
+      width: 100%; 
+    }
+  }
+  
+
   button {
     background-color: #4caf50;
     color: white;

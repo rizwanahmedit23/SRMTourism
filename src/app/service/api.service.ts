@@ -30,7 +30,7 @@ export class ApiService {
     };
   }
 
-  private baseUrl = 'http://travel-buddy-service-env.eba-teipm8pv.ap-southeast-2.elasticbeanstalk.com';
+  private baseUrl = 'https://tourism-app-server-a7b66463d42e.herokuapp.com';
 
 loginUser(credentials: { email: string, password: string }): Observable < any > {
   return this.http.post<any>(`${this.baseUrl}/loginAccount`, credentials);
